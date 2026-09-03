@@ -9,7 +9,7 @@ import (
 )
 
 type HTTPServer struct {
-	Addr string
+	Addr string `yaml:"address" env-required:"true"`
 }
 
 // This should be set as if our env-required was false then this default value can be taken as some other thing, then it would be a problem
